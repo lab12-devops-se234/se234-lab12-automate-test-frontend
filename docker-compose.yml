@@ -1,0 +1,10 @@
+version: '3.3'
+services:
+  backend:
+    image: dto80/se234-lab12
+    ports:
+      - 8088:8080
+  frontend:
+    image: ptpofficialxd/234-deploylab12-frontend:latest
+    ports:
+      - "8089:80"
