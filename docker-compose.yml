@@ -6,6 +6,7 @@ services:
       - 8088:8080
   frontend:
     image: ptpofficialxd/234-deploylab12-frontend:latest
-    source: /home/lab12_data/data.xlsx
+    volumes: 
+      - /home/lab12_data/data.xlsx
     ports:
       - "8089:80"
